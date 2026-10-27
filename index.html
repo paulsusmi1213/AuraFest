@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraFest — GenAI Celebration & Event Planner | Weddings, Birthdays & Galas</title>
+  <meta name="description" content="AI-powered celebration and event planning assistant. Organize luxury weddings, milestone birthdays, and community festivals with dynamic budgets, run of show timelines, vendor checklists, and personalized ideas.">
+  <meta name="keywords" content="event planner, wedding planner, celebration AI, event budget calculator, run of show timeline, vendor checklist, party ideas, milestone birthday">
+  <meta name="author" content="AuraFest Intelligent Celebration Systems">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AuraFest — GenAI Celebration & Event Planner">
+  <meta property="og:description" content="Organize unforgettable weddings, birthdays, and community gatherings with AI budget optimization, precision timelines, vendor CRM, and bespoke creative concepts.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- Sticky Top Application Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-inner">
+      <!-- Brand & Emblem -->
+      <a href="#" class="brand-block" id="brand-home-link">
+        <div class="brand-logo-icon">🥂</div>
+        <div class="brand-text-col">
+          <span class="brand-name font-serif">AuraFest</span>
+          <span class="brand-tagline">GenAI Celebration Architecture</span>
+        </div>
+      </a>
+
+      <!-- Event Picker Dropdown & Quick Add -->
+      <div class="event-picker-wrapper">
+        <span class="text-xs text-muted font-bold">ACTIVE CELEBRATION:</span>
+        <div id="event-selector-dropdown">
+          <!-- Populated dynamically via JS -->
+        </div>
+        <button class="btn btn-gold btn-xs" id="btn-new-event" title="Plan a new wedding, birthday, or festival">
+          + Plan Celebration
+        </button>
+      </div>
+
+      <!-- Header Global Controls -->
+      <div class="header-right-actions">
+        <button class="btn btn-secondary btn-sm" id="btn-sound-toggle" title="Toggle Celebration Chimes">
+          🔔 Sound On
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-theme-toggle" title="Switch Theme (Dark / Luminous)">
+          🌓 Theme
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-print-dossier" title="Export or Print Event Brief">
+          🖨️ Export PDF
+        </button>
+        <button class="btn btn-outline btn-xs" id="btn-reset-data" title="Restore sample events">
+          🔄 Reset
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tab Bar -->
+  <nav class="app-nav-tabs-wrapper" id="main-navigation-bar" aria-label="Celebration Sections">
+    <div class="nav-tabs-container">
+      <button class="nav-tab active" data-tab="overview" id="tab-nav-overview">
+        <span>🌟</span>
+        <span>Overview & Countdown</span>
+      </button>
+
+      <button class="nav-tab" data-tab="ai" id="tab-nav-ai">
+        <span>🧠</span>
+        <span>Aura AI Copilot</span>
+        <span class="nav-tab-badge">GENAI</span>
+      </button>
+
+      <button class="nav-tab" data-tab="budget" id="tab-nav-budget">
+        <span>💰</span>
+        <span>Budget & Expenses</span>
+      </button>
+
+      <button class="nav-tab" data-tab="timeline" id="tab-nav-timeline">
+        <span>⏱️</span>
+        <span>Timeline & Run of Show</span>
+      </button>
+
+      <button class="nav-tab" data-tab="vendors" id="tab-nav-vendors">
+        <span>📋</span>
+        <span>Vendors & Checklists</span>
+      </button>
+
+      <button class="nav-tab" data-tab="ideas" id="tab-nav-ideas">
+        <span>🎨</span>
+        <span>Ideas & Moodboard</span>
+      </button>
+
+      <button class="nav-tab" data-tab="guests" id="tab-nav-guests">
+        <span>👥</span>
+        <span>Guest List & RSVP</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Application Content Outlet -->
+  <main class="app-container" id="main-tab-content">
+    <!-- Populated dynamically via JS modules based on activeTab -->
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="app-footer text-center py-4 text-muted text-xs border-top" style="margin-top: auto;">
+    <div class="app-container">
+      <p>
+        <strong class="text-gold font-serif">AuraFest AI</strong> — Intelligent Celebration & Event Planning Assistant. 
+        Engineered for luxury weddings, landmark birthdays, and vibrant community galas.
+      </p>
+      <p class="mt-1">
+        Local-first persistence • Web Audio synthesis • Calendar .ICS export • Seamless responsive UX
+      </p>
+    </div>
+  </footer>
+
+  <!-- Application Logic Modules -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
