@@ -1,0 +1,12 @@
+{
+  "name": "aurafest",
+  "version": "1.0.0",
+  "description": "AuraFest - GenAI Celebration & Event Planner",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": ["event-planner", "celebration", "wedding-planner", "genai"],
+  "author": "paulsusmi1213",
+  "license": "MIT"
+}
